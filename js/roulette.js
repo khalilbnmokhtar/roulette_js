@@ -80,8 +80,6 @@ function roulette_func ()
     console.log(deg)
     console.log(Math.floor(deg/45))
      
-    let element = document.getElementById('main_roue')
-    element.classList.remove('anim')
     
 
 }
