@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/roulette.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>roulette by khalil</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+</head>
+
+<body style="overflow: hidden;">
+
+  <div class="container-fluid bg-dark d-flex justify-content-center align-items-center" style="height: 100vh ;">
+    <div class="row">
+      <div class="  col-12 col-md-12 d-flex justify-content-center align-items-center ">
+        <div class=" main overflow-hidden roulette rounded-circle bg-light  " id="roue">
+          
+          <span class="span1 w-50 h-50"><b>10</b></span>
+          <span class="span2  w-50 h-50"><b>110</b></span>
+          <span class="span3  w-50 h-50"><b>200</b></span>
+          <span class="span4  w-50 h-50"><b>350</b></span>
+          <button class=" btn btn-warning rounded-circle p-2 position-absolute top-50 start-50 translate-middle" onclick="roulette_func()"> spin</button>
+
+        </div>
+        <i class="bi bi-caret-left-fill fs-5 fw-bold text-warning"></i>
+      </div>
+    </div>
+    <div class="box-cal11 card text-center   ">
+      Designed by KHALIL
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/roulette.js"></script>
+</body>
+
+</html>
