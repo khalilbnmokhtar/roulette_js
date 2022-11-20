@@ -73,16 +73,73 @@ console.log(plus_grand_val_rep(aux))
 /************************************ btn spin ******************************************* */
 function roulette_func ()
 {
-    let x = 1024 
-    let y = 9999
-    let deg = Math.floor(Math.random()* (x-y))+y
+    var audio = new Audio('song/audio.mp3')
+    audio.play()
+    deg = Math.floor( 5000 + Math.random()* 5000)
     document.getElementById('roue').style.transform = "rotate("+deg+"deg)"
     console.log(deg)
-    console.log(Math.floor(deg/45))
-     
+    let main = document.getElementById('roue')
+
+
+
+    let deg_actuel = deg % 360
+    let result = document.getElementById('win')
+    setTimeout(() => {
+        if (deg_actuel >0 && deg_actuel<= 20 )
+        {
+            result.innerHTML='you win 110'
+        }
+        
+        if (deg_actuel >20 && deg_actuel<= 65 )
+        {
+            result.innerHTML='no chance'
+        }
+        
+        if (deg_actuel >65 && deg_actuel<= 110  )
+        {
+            result.innerHTML='you win 10'
+        }
+        
+        if (deg_actuel >110 && deg_actuel<= 155 )
+        {
+            result.innerHTML=' no chance '
+        }
+        
+        if (deg_actuel >155 && deg_actuel<= 200 )
+        {
+            result.innerHTML='you win 350' 
+        }
+        
+        if (deg_actuel >200 && deg_actuel<= 245 )
+        {
+            result.innerHTML='no chance'
+        }
+        
+        if (deg_actuel >245 && deg_actuel<= 290 )
+        {
+            result.innerHTML='you win 200'
+        }
+        
+        if (deg_actuel >290 && deg_actuel<= 335 )
+        {
+            result.innerHTML='no chance'
+        }
+        
+        if (deg_actuel >335 && deg_actuel<= 360 )
+        {
+            result.innerHTML='you win 110'
+        }   
+    }, 15000);
     
 
+
 }
+
+
+
+    //
+    
+
 
 /*
 360 / 8 = 45
