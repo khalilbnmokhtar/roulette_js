@@ -1,20 +1,21 @@
 .main {
-    height: 500px ; 
-    width: 500px;
-     position: relative;
-     transition: all ease 15s;
+    height: 400px ; 
+    width: 400px;
+    position: relative;
+    transition: all ease 15s;
     box-shadow: rgba(209, 43, 43, 0.25) 0px 54px 55px, rgba(195, 28, 56, 0.25) 0px -12px 30px, rgba(215, 24, 37, 0.25) 0px 4px 6px, rgba(239, 18, 18, 0.25) 0px 12px 13px, rgba(233, 18, 68, 0.25) 0px -3px 5px !important;
-
 }
 
-
-
-
-
+.bi{
+    position: relative;
+    top: 20px;
+    font-size: 30px!important;
+    z-index: 9;
+    
+}
 .roulette{
     position: relative;
     overflow: hidden;
-
 }
 span{
     display: inline-block;
@@ -23,27 +24,27 @@ span{
 .span1{
     clip-path: polygon(100% 51%, 0 12%, 0 88%);
     background-color: aqua;
-    top: 120px;
+    top: 100px;
     left: 0;
 }
 .span2{
     clip-path: polygon(51% 100%, 88% 0, 12% 0);
     background-color: bisque;
     top: 0;
-    left: 120px;
+    left: 100px;
 }
 
 .span3{
     clip-path: polygon(0 51%, 100% 88%, 100% 12%);
     background-color: rgb(218, 57, 57);
-    top: 120px;
+    top: 100px;
     right: 0;
 }
 .span4{
     clip-path: polygon(12% 100%, 88% 100%, 51% 0);
     background-color: rgb(230, 37, 146);
     bottom: 0;
-    left: 120px;
+    left: 100px;
 }
 
 b{
@@ -61,16 +62,11 @@ b{
     line-height: 65px;
 }
 
-
-
-
 .box-cal11 {
     position:absolute !important;
     bottom: 20px !important;
     right:  10px !important;
-   
     box-shadow: rgba(209, 43, 43, 0.25) 0px 54px 55px, rgba(195, 28, 56, 0.25) 0px -12px 30px, rgba(215, 24, 37, 0.25) 0px 4px 6px, rgba(239, 18, 18, 0.25) 0px 12px 13px, rgba(233, 18, 68, 0.25) 0px -3px 5px !important;
-  
-     width: 200px;
-     border: solid 1px steelblue;
+    width: 200px;
+    border: solid 1px steelblue;
 }

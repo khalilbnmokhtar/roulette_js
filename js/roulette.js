@@ -1,6 +1,5 @@
 /********************* traitement ******************************************** */
 
-
 function randomValue ()
 {
  var test =  (Math.floor((Math.random() * 10)+1) % 2 === 0)  // fonction renvoi true/false
@@ -13,7 +12,6 @@ function randomValue ()
         return 'black'
     }
 }
-
 
 function roulettetour ( nbr_tour)
 {
@@ -75,7 +73,7 @@ function roulette_func ()
 {
     var audio = new Audio('song/audio.mp3')
     audio.play()
-    deg = Math.floor( 5000 + Math.random()* 5000)
+    deg = Math.floor( 1024+ Math.random()* 9999)
     document.getElementById('roue').style.transform = "rotate("+deg+"deg)"
     console.log(deg)
     let main = document.getElementById('roue')
@@ -135,14 +133,3 @@ function roulette_func ()
 
 }
 
-
-
-    //
-    
-
-
-/*
-360 / 8 = 45
-2427 / 45 = 53.93 
-Math.floor(53,93)
-*/
